@@ -39,7 +39,7 @@ Project is created with:
 
 
 ## Setup
-To run this project, install it locally using npm - you will need nom intelled to run the client-app
+To run this project, install it locally using npm - you will need npm installed to run the client-app
 * On a terminal window clone the repo into your directory witn the this command: git clone https://github.com/maurodoneda/SEOAnalyzer.git
 * Open the solution file on VisuaStudio or VScode 
 * On appsetting.json you need to set your local machine on the conectionstring, just change the data source to your local machine name and add any name to Initial Catalog:

@@ -1,17 +1,15 @@
 # 
 
-
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
 
 ## General info
-SEO Analyzer - This is a small project I created to analyse the SEO results of a search term in google. 
+SEO Analyzer - This is a small project I created to analyze the SEO results of a search term in google. 
 The project is devide in two, server app(backend) and client app(front-end). on The backend project I used C# and .Net to create a Domain Driven Architecture, where the ceneter of the aplication is the Entities. 
 
 ![Software Architecture](image.png)
-
 
 
 -- Data Layer --
@@ -33,15 +31,36 @@ I havente used React in a whiel so given more time this can app can grow. Becaus
 
 
 
-	
 ## Technologies
 Project is created with:
 * C# / .Net5 / EntityFramework for the back-end.
 * React.js for the front-end.
-	
+
+
+
 ## Setup
 To run this project, install it locally using npm - you will need nom intelled to run the client-app
-$ on a terminal window clone the repo into your directory witn the this command: 
-$ npm install
-$ npm start
+* On a terminal window clone the repo into your directory witn the this command: git clone https://github.com/maurodoneda/SEOAnalyzer.git
+* Open the solution file on VisuaStudio or VScode 
+* On appsetting.json you need to set your local machine on the conectionstring, just change the data source to your local machine name and add any name to Initial Catalog:
+```diff
+ "ConnectionStrings": {
+-    "Default": "Data Source=MAURO-PC\\SQLEXPRESS;Initial Catalog=SEOAnalyzer2;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
+  }
+
+```
+- The system is configured to create a new DataBase if you dont have one when you run it first time.
+
+
+* Run the API (note you should change to run the api instead of the IIS on visualStudio). This will lunch the API on on your $local port: localhost:5001
+* With the API running now cd or open a terminal into the client-app folder where the React App is located
+* On the terminal type the command: npm start
+* Now it will luch the app in your localhost:3000 and you should see the initial screen and be able to type your search term and url to analyze. After it runs you give you a back a string with the position if it appear on the first 100 pages.
+
+Given more time this app can grow in complexity and in features, there is a lot to work on still, speacially on the fron-end where I didn't have much time to work on. But the way is paved for it!
+
+Best Regards,
+
+Mauro Doneda
+Software Engineer
 ```

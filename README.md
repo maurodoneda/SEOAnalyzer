@@ -40,8 +40,8 @@ Project is created with:
 * React.js for the front-end.
 	
 ## Setup
-To run this project, install it locally using npm:
-$ cd ../lorem
+To run this project, install it locally using npm - you will need nom intelled to run the client-app
+$ on a terminal window clone the repo into your directory witn the this command: 
 $ npm install
 $ npm start
 ```

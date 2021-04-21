@@ -8,6 +8,7 @@ namespace Domain
         public int Id { get; set; }
         public string Query { get; set; }
         public DateTime Date { get; set; }
-        public virtual IEnumerable<Result> Results { get; set; }
+        public int ResultId { get; set; }
+        public Result Result { get; set; }
     }
 }

@@ -9,8 +9,7 @@ namespace Domain
     public class Result
     {
         public int Id { get; set; }
-        public string Url { get; set; }
-        public int  Position { get; set; }
-        public Search Search { get; set; }
+        public string UrlAnalyzed { get; set; }
+        public string Position { get; set; }
     }
 }
